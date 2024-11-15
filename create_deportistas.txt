@@ -1,0 +1,66 @@
+db.deportistas.insertMany([
+    { name: "Marc-Andre ter Stegen", age: 26, position: "Goalkeeper", team: "Barcelona" },
+    { name: "Sergi Roberto", age: 27, position: "Right Back", team: "Barcelona" },
+    { name: "Gerard Pique", age: 32, position: "Center Back", team: "Barcelona" },
+    { name: "Clement Lenglet", age: 23, position: "Center Back", team: "Barcelona" },
+    { name: "Jordi Alba", age: 29, position: "Left Back", team: "Barcelona" },
+    { name: "Ivan Rakitic", age: 30, position: "Midfielder", team: "Barcelona" },
+    { name: "Sergio Busquets", age: 30, position: "Midfielder", team: "Barcelona" },
+    { name: "Arthur Melo", age: 22, position: "Midfielder", team: "Barcelona" },
+    { name: "Lionel Messi", age: 31, position: "Forward", team: "Barcelona" },
+    { name: "Luis Suarez", age: 32, position: "Forward", team: "Barcelona" },
+    { name: "Philippe Coutinho", age: 26, position: "Forward", team: "Barcelona" }
+]);
+
+db.deportistas.insertMany([
+    { name: "Wojciech Szczesny", age: 28, position: "Goalkeeper", team: "Juventus" },
+    { name: "Joao Cancelo", age: 24, position: "Right Back", team: "Juventus" },
+    { name: "Leonardo Bonucci", age: 31, position: "Center Back", team: "Juventus" },
+    { name: "Giorgio Chiellini", age: 34, position: "Center Back", team: "Juventus" },
+    { name: "Alex Sandro", age: 27, position: "Left Back", team: "Juventus" },
+    { name: "Miralem Pjanic", age: 28, position: "Midfielder", team: "Juventus" },
+    { name: "Blaise Matuidi", age: 31, position: "Midfielder", team: "Juventus" },
+    { name: "Emre Can", age: 25, position: "Midfielder", team: "Juventus" },
+    { name: "Cristiano Ronaldo", age: 34, position: "Forward", team: "Juventus" },
+    { name: "Mario Mandzukic", age: 32, position: "Forward", team: "Juventus" },
+    { name: "Paulo Dybala", age: 25, position: "Forward", team: "Juventus" }
+]);
+db.deportistas.insertMany([
+    { name: "Thibaut Courtois", age: 26, position: "Goalkeeper", team: "Real Madrid" },
+    { name: "Dani Carvajal", age: 27, position: "Right Back", team: "Real Madrid" },
+    { name: "Sergio Ramos", age: 32, position: "Center Back", team: "Real Madrid" },
+    { name: "Raphael Varane", age: 25, position: "Center Back", team: "Real Madrid" },
+    { name: "Marcelo", age: 30, position: "Left Back", team: "Real Madrid" },
+    { name: "Casemiro", age: 27, position: "Midfielder", team: "Real Madrid" },
+    { name: "Luka Modric", age: 33, position: "Midfielder", team: "Real Madrid" },
+    { name: "Toni Kroos", age: 29, position: "Midfielder", team: "Real Madrid" },
+    { name: "Gareth Bale", age: 29, position: "Forward", team: "Real Madrid" },
+    { name: "Karim Benzema", age: 31, position: "Forward", team: "Real Madrid" },
+    { name: "Isco", age: 26, position: "Midfielder", team: "Real Madrid" }
+]);
+db.deportistas.insertMany([
+    { name: "Alisson Becker", age: 26, position: "Goalkeeper", team: "Liverpool" },
+    { name: "Trent Alexander-Arnold", age: 20, position: "Right Back", team: "Liverpool" },
+    { name: "Joel Matip", age: 27, position: "Center Back", team: "Liverpool" },
+    { name: "Virgil van Dijk", age: 27, position: "Center Back", team: "Liverpool" },
+    { name: "Andrew Robertson", age: 25, position: "Left Back", team: "Liverpool" },
+    { name: "Jordan Henderson", age: 28, position: "Midfielder", team: "Liverpool" },
+    { name: "Georginio Wijnaldum", age: 28, position: "Midfielder", team: "Liverpool" },
+    { name: "Fabinho", age: 25, position: "Midfielder", team: "Liverpool" },
+    { name: "Mohamed Salah", age: 26, position: "Forward", team: "Liverpool" },
+    { name: "Roberto Firmino", age: 27, position: "Forward", team: "Liverpool" },
+    { name: "Sadio Mane", age: 26, position: "Forward", team: "Liverpool" }
+]);
+db.deportistas.insertMany([
+    { name: "Hugo Lloris", age: 32, position: "Goalkeeper", team: "Tottenham" },
+    { name: "Kieran Trippier", age: 28, position: "Right Back", team: "Tottenham" },
+    { name: "Toby Alderweireld", age: 30, position: "Center Back", team: "Tottenham" },
+    { name: "Jan Vertonghen", age: 31, position: "Center Back", team: "Tottenham" },
+    { name: "Danny Rose", age: 28, position: "Left Back", team: "Tottenham" },
+    { name: "Harry Winks", age: 23, position: "Midfielder", team: "Tottenham" },
+    { name: "Moussa Sissoko", age: 29, position: "Midfielder", team: "Tottenham" },
+    { name: "Christian Eriksen", age: 27, position: "Midfielder", team: "Tottenham" },
+    { name: "Son Heung-min", age: 26, position: "Forward", team: "Tottenham" },
+    { name: "Dele Alli", age: 22, position: "Forward", team: "Tottenham" },
+    { name: "Harry Kane", age: 25, position: "Forward", team: "Tottenham" }
+]);
