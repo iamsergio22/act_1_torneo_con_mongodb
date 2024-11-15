@@ -1,0 +1,6 @@
+db.createCollection("deportistas");
+db.createCollection("entrenadores");
+db.createCollection("arbitros");
+db.createCollection("partidos");
+db.createCollection("resultados");
+db.createCollection("tabla_clasificacion");
