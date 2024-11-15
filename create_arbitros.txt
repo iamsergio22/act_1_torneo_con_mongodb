@@ -1,0 +1,12 @@
+db.arbitros.insertMany([
+    { name: "Damir Skomina", country: "Slovenia", experience: 12 },
+    { name: "Bjorn Kuipers", country: "Netherlands", experience: 14 },
+    { name: "Cuneyt Cakir", country: "Turkey", experience: 16 },
+    { name: "Felix Brych", country: "Germany", experience: 15 },
+    { name: "Danny Makkelie", country: "Netherlands", experience: 10 },
+    { name: "Antonio Mateu Lahoz", country: "Spain", experience: 13 },
+    { name: "Szymon Marciniak", country: "Poland", experience: 12 },
+    { name: "Daniele Orsato", country: "Italy", experience: 11 },
+    { name: "Michael Oliver", country: "England", experience: 8 },
+    { name: "Anthony Taylor", country: "England", experience: 10 }
+]);

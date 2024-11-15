@@ -1,0 +1,7 @@
+db.entrenadores.insertMany([
+    { name: "Ernesto Valverde", team: "Barcelona", experience: 18 },
+    { name: "Massimiliano Allegri", team: "Juventus", experience: 14 },
+    { name: "Zinedine Zidane", team: "Real Madrid", experience: 5 },
+    { name: "Jurgen Klopp", team: "Liverpool", experience: 19 },    
+    { name: "Mauricio Pochettino", team: "Tottenham", experience: 10 }
+]);
