@@ -12,3 +12,12 @@ mongod --port 27019 --dbpath C:/Users/Sergio/Desktop/torneo_deportivo_mongodb/in
 
 3.Conectarnos  a uno de los nodos
 mongosh --port 27017
+
+4.Inicia el Replica Set:
+rs.initiate({
+    _id: "miReplicaSet",
+    members: [        { _id: 0, host: "localhost:27017" },        { _id: 1, host: "localhost:27018" },        { _id: 2, host: "localhost:27019" }    ]
+});
+
+5.Verifica el estado del Replica Set
+rs.status()
