@@ -21,3 +21,15 @@ rs.initiate({
 
 5.Verifica el estado del Replica Set
 rs.status()
+
+6. Probar el Replica Set
+Inserta datos en el PRIMARY
+
+db.tabla_clasificacion.insertMany([ { team: "Barcelona", points: 14, games_played: 6, wins: 4, draws: 2, losses: 0 }, { team: "Tottenham", points: 8, games_played: 6, wins: 2, draws: 2, losses: 2 }, { team: "Liverpool", points: 9, games_played: 6, wins: 3, draws: 0, losses: 3 }, { team: "Juventus", points: 12, games_played: 6, wins: 4, draws: 0, losses: 2 }, { team: "Real Madrid", points: 12, games_played: 6, wins: 4, draws: 0, losses: 2 }, { team: "Ajax", points: 12, games_played: 6, wins: 3, draws: 3, losses: 0 }, { team: "Manchester City", points: 13, games_played: 6, wins: 4, draws: 1, losses: 1 }, { team: "Bayern Munich", points: 14, games_played: 6, wins: 4, draws: 2, losses: 0 }, { team: "Paris Saint-Germain", points: 11, games_played: 6, wins: 3, draws: 2, losses: 1 }, {
+ team: "Atletico Madrid", points: 13, games_played: 6, wins: 4, draws: 1, losses: 1 }] );
+
+7. Verificar que los datos se replican en los secundarios: Conéctarnos a uno de los nodos SECONDARY
+mongosh --port 27018
+rs.slaveOk
+db.miColeccion.find()
+
