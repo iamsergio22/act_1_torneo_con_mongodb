@@ -1,0 +1,36 @@
+cluster = new ShardingTest ({shards: 3, chunksize:1})
+
+db = (New Mongo("localhost:20006")).getDB("Biblioteca")
+
+mongodb.Autores.insert({author : "author" + i, post_title : "Blog Post by Author " + i, date: new Date() });
+
+
+db.Editoriales.insertMany([
+    {id_editorial: 9, nombre: 'McGraw Hill', pais: 'USA', grupo: 'McCallun y Cia.'},
+    {id_editorial: 10, nombre: 'Addison Wesley', pais: 'USA', grupo: 'McCallun y Cia.'},
+    {id_editorial: 11, nombre: 'La oveja negra', pais: 'Colombia', grupo: 'Mejía y Cia'},
+    {id_editorial: 12, nombre: 'Aguilar', pais: 'México', grupo: 'Aguilar y Cia'},
+    {id_editorial: 13, nombre: 'Alfaguara', pais: 'Colombia', grupo: 'Grupo Empresarial'}
+]);
+
+db.Autores.count()
+db.Mis libros.count()
+db.Editoriales.count()
+
+shard1 = new Mongo("localhost:20000")
+shard1DB = shard1.getDB("Biblioteca")
+shard1DB.Autores.count()
+
+shard2 = new Mongo("localhost:20001")
+shard2DB = shard2.getDB("Biblioteca")
+shard2DB.Autores.count()
+
+shard3 = new Mongo("localhost:20002")
+shard3DB = shard3.getDB("Biblioteca")
+shard3DB.Autores.count()
+
+db.Autores.ensureIndex({author: 1})
+
+sh.shardCollection("Biblioteca.Autores", {author: 1})
+
+
